@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Angular Exercise!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type='text/javascript'>
+$(function() {
+    function btnClick() {
+        alert("Button[" + this.value + "] clicked!");
+    }
+    $("#a").click(btnClick);
+    var virtualButton = { value: "V" };
+    btnClick.apply(virtualButton);
+});
+</script>
+</head><body>
+<input type="button" value="A" id="a" />
+
+</body>
+</html>
